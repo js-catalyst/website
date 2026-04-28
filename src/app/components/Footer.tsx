@@ -12,7 +12,7 @@ export function Footer() {
             <div className="text-xs tracking-widest mb-4">LET'S CONNECT</div>
             <div className="space-y-2 mb-8">
               <p className="text-sm font-light" style={{ fontFamily: '"Inter", sans-serif' }}>Ready to accelerate your revenue growth?</p>
-              <p className="text-sm font-light" style={{ fontFamily: '"Inter", sans-serif' }}>contact@jscatalyst.com</p>
+              <p className="text-sm font-light" style={{ fontFamily: '"Inter", sans-serif' }}>contact@js-catalyst.com</p>
             </div>
             <div className="flex gap-4">
               <a
@@ -25,7 +25,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto: info@jscatalyst.com"
+                href="mailto: contact@js-catalyst.com"
                 className="w-10 h-10 border border-[#2c2c2c] rounded-full flex items-center justify-center hover:bg-[#2c2c2c] hover:text-white transition-all duration-300"
                 aria-label="Email"
               >
