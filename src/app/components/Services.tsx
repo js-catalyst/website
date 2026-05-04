@@ -25,18 +25,18 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[#e8e2d9]">
+    <section id="services" className="py-16 sm:py-20 md:py-24 bg-[#e8e2d9]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="text-sm tracking-widest text-[#666] mb-4">SERVICES</div>
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <div className="text-xs sm:text-sm tracking-widest text-[#666] mb-4">SERVICES</div>
         </div>
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 sm:gap-y-12 md:gap-12 max-w-md sm:max-w-none mx-auto">
           {services.map((service, index) => (
             <div key={index} className="text-center">
-              <div className="flex justify-center mb-6">
-                <service.icon className="w-12 h-12 text-[#666] stroke-[1.5]" />
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#666] stroke-[1.5]" />
               </div>
-              <h3 className="text-sm tracking-wider mb-4">{service.title}</h3>
+              <h3 className="text-sm tracking-wider mb-3 sm:mb-4">{service.title}</h3>
               <p className="text-sm text-[#666] leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
                 {service.description}
               </p>

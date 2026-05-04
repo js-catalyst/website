@@ -31,6 +31,14 @@ export default defineConfig({
     },
   },
 
+  // GitHub Pages on this repo is configured to serve from /docs, so build there.
+  // emptyOutDir wipes the folder first; CNAME lives in /public so it gets
+  // re-copied on every build and the custom domain stays wired up.
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
+
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
